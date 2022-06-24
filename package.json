@@ -6,8 +6,8 @@
     "license": "GPL-3.0-only",
     "author": {
         "name": "Andrew Antsiferov",
-        "email": "andrew@antsif.tk",
-        "url": "https://github.com/summetdev"
+        "email": "summet.dev@gmail.com",
+        "url": "https://github.com/antsif-a"
     },
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
