@@ -2,31 +2,31 @@
     "name": "ts-setup",
     "version": "1.0.0",
     "description": "An easy-to-use TypeScript project setup.",
-    "keywords": ["typescipt"],
+    "keywords": [
+        "typescipt"
+    ],
     "license": "GPL-3.0-only",
     "author": {
         "name": "Andrew Antsiferov",
         "email": "summet.dev@gmail.com",
         "url": "https://github.com/antsif-a"
     },
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
+    "main": "./build/index.js",
+    "types": "./build/index.d.ts",
     "scripts": {
-        "run": "ts-node ./src/index.ts",
-        "build": "yarn install && yarn build:tsc",
-        "build:tsc": "tsc",
-        "build:publish": "yarn build && yarn publish",
+        "prestart": "tsc",
+        "start": "node ./build/index.js",
         "lint": "eslint . --cache",
         "lint:fix": "yarn lint --fix"
     },
     "devDependencies": {
         "@types/node": "^14.6.3",
-        "@typescript-eslint/eslint-plugin": "^4.19.0",
-        "@typescript-eslint/parser": "^4.0.1",
-        "eslint": "^7.8.1",
-        "eslint-config-airbnb-base": "^14.2.1",
-        "eslint-plugin-import": "^2.22.1",
-        "ts-node": "^9.1.1",
+        "@typescript-eslint/eslint-plugin": "^5.30.7",
+        "@typescript-eslint/parser": "^5.30.7",
+        "eslint": "^8.20.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-airbnb-typescript": "^17.0.0",
+        "eslint-plugin-import": "^2.26.0",
         "typescript": "^4.0.2"
     }
 }

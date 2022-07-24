@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
-        "outDir": "./dist",
-        "declarationDir": "./dist",
+        "outDir": "./build",
+        "declarationDir": "./build",
         "module": "commonjs",
-        "target": "es2020",
+        "target": "esnext",
         "declaration": true,
         "sourceMap": true,
         "experimentalDecorators": true,
