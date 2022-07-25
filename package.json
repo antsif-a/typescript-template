@@ -1,7 +1,7 @@
 {
-    "name": "ts-setup",
+    "name": "typescript-template",
     "version": "1.0.0",
-    "description": "An easy-to-use TypeScript project setup.",
+    "description": "TypeScript project template with ESLint included.",
     "keywords": [
         "typescipt"
     ],
@@ -17,7 +17,7 @@
         "prestart": "tsc",
         "start": "node ./build/index.js",
         "lint": "eslint . --cache",
-        "lint:fix": "yarn lint --fix"
+        "lint:fix": "eslint . --cache --fix"
     },
     "devDependencies": {
         "@types/node": "^14.6.3",
